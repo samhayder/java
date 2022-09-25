@@ -56,41 +56,55 @@ public class Arrays {
             System.out.print(names[i]+" ");
         }*/
 
-        //04. Find the maximum & minimum number in an array of integers.
-        int arr[] = new int[6];
-        for (int i = 0; i < arr.length; i++){
-            arr[i] = sc.nextInt();
-        }
-        int max = Integer.MAX_VALUE;
-        int min = Integer.MIN_VALUE;
-        for (int i = 0; i < arr.length; i++){
-            if (arr[i] > max) {
-                max = arr[i];
-            }
-            if (arr[i] < min){
-                min = arr[i];
-            }
-        }
+        //****** 2D Array ****************
+        /*System.out.println("Please type your rows.");
+        int rows = sc.nextInt();
+        System.out.println("please type your colum");
+        int colum = sc.nextInt();
 
-        int size = sc.nextInt();
-        int numbers[] = new int[size];
+        int arr2D [][] = new int[rows][colum];
 
-        //input
-        for(int i=0; i<size; i++) {
-            numbers[i] = sc.nextInt();
-        }
-
-        for(int i=0; i<numbers.length; i++) {
-            if(numbers[i] < min) {
-                min = numbers[i];
-            }
-            if(numbers[i] > max) {
-                max = numbers[i];
+        //Input
+        //Outer Loops for rows
+        for (int i = 0; i < rows; i++){
+            //Inner loops for colum
+            for (int j = 0; j < colum; j++){
+                arr2D[i][j] = sc.nextInt();
             }
         }
 
-        System.out.println("Largest number is : " + max);
-        System.out.println("Smallest number is : " + min);
+        System.out.println("Type Searching number.");
+        int search = sc.nextInt(); //Search number
+        //Search Looping
+        for (int i = 0; i < rows; i++){
+            for (int j = 0; j < colum; j++){
+                if (arr2D[i][j] == search){
+                    System.out.println(search + " Number location is " + i + "," + j);
+                }else {
+                    System.out.println(search + " Not found");
+                }
+            }
+        }*/
+
+
+        //04. Print the spiral order matrix as output for a given matrix of numbers.
+        int matrixRow = 5;
+        int matrixColum = 6;
+        int matrixArr [][] = new int[matrixRow][matrixColum];
+        //Input
+        for (int i = 0; i < matrixRow; i++){
+            for (int j = 0; j < matrixColum; j++){
+                matrixArr[i][j] = sc.nextInt();
+            }
+        }
+        //Output
+        for (int i = 0; i < matrixRow; i++){
+            for (int j = 0; j < matrixColum; j++){
+                System.out.print(matrixArr[i][j] + " ");
+            }
+            System.out.println();
+        }
+
 
 
 
