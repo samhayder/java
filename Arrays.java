@@ -87,9 +87,9 @@ public class Arrays {
         }*/
 
 
-        //04. Print the spiral order matrix as output for a given matrix of numbers.
-        int matrixRow = 5;
-        int matrixColum = 6;
+        //04. For a given matrix of N x M, print its transpose.
+        int matrixRow = 3;
+        int matrixColum = 3;
         int matrixArr [][] = new int[matrixRow][matrixColum];
         //Input
         for (int i = 0; i < matrixRow; i++){
@@ -98,8 +98,8 @@ public class Arrays {
             }
         }
         //Output
-        for (int i = 0; i < matrixRow; i++){
-            for (int j = 0; j < matrixColum; j++){
+        for (int j = 0; j < matrixColum; j++){
+            for (int i = 0; i < matrixRow; i++){
                 System.out.print(matrixArr[i][j] + " ");
             }
             System.out.println();
