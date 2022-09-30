@@ -23,7 +23,7 @@ public class Looping {
         //59 >= Marks >= 0 -> print “This is Good as well”
         //    Because marks don’t matter but our effort does.
 
-        do {
+        /*do {
             if(n >= 90) {
                 System.out.println("This is Good.");
             } else if (n >= 60 || n >= 89) {
@@ -33,7 +33,7 @@ public class Looping {
             } else {
                 System.out.println("Because marks don't matter but our effort does.");
             }
-        } while (n == 1);
+        } while (n == 1);*/
 
 
     }

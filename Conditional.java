@@ -4,6 +4,7 @@ public class Conditional {
     public static void main(String[] args) {
         //Set user Input method
         Scanner userInput = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         
         //01. Checking Is Adult *************
         /* int age = userInput.nextInt();
@@ -101,6 +102,24 @@ public class Conditional {
                 break;
             default: System.out.println("December");
         }*/
+
+        //03. Greatest Common Divisor(GCD) & Least Common Multiple(LCM)
+        System.out.println("Enter 2 integer number");
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int n1 = num1;
+        int n2 = num2;
+        int rem, gcd, lcm;
+        while (n2 != 0) {
+            rem = n1 % n2;
+            n1 = n2;
+            n2 = rem;
+        }
+        gcd = n1;
+        lcm = (num1*num2) / gcd;
+        System.out.println("GCD: " + gcd);
+        System.out.println("LCM: " + lcm);
+
 
 
 
